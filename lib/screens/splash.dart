@@ -39,7 +39,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () => getCredential());
+    Timer(const Duration(seconds: 2), () => getCredential());
   }
 
   @override

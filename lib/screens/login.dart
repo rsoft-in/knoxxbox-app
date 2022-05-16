@@ -12,8 +12,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   late FocusNode focusNodePassword;
-  TextEditingController _controllerUsername = TextEditingController();
-  TextEditingController _controllerPassword = TextEditingController();
+  final TextEditingController _controllerUsername = TextEditingController();
+  final TextEditingController _controllerPassword = TextEditingController();
   late SharedPreferences sharedPreferences;
   bool _passwordVisible = false;
   bool isBusy = false;

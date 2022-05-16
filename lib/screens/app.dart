@@ -1,10 +1,10 @@
-import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:knoxxbox/constants.dart';
 import 'package:knoxxbox/helpers/adaptive.dart';
 import 'package:knoxxbox/models/drawer_item.dart';
 import 'package:knoxxbox/screens/dashboard.dart';
+import 'package:yaru/yaru.dart';
 
 class KnoxxboxApp extends StatefulWidget {
   const KnoxxboxApp({Key? key}) : super(key: key);
@@ -73,7 +73,7 @@ class _KnoxxboxAppState extends State<KnoxxboxApp> {
           // user.userClientId.contains('super-admin') &&
           drawerOptions.add(ListTile(
             dense: true,
-            selectedTileColor: FlexColor.redWineDarkPrimary.withOpacity(0.2),
+            selectedTileColor: YaruVariant.orange.color.withOpacity(0.2),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
@@ -92,8 +92,7 @@ class _KnoxxboxAppState extends State<KnoxxboxApp> {
           //!user.userClientId.contains('super-admin') &&
           drawerOptions.add(ListTile(
             dense: true,
-            selectedTileColor:
-                FlexColor.blumineBlueDarkPrimary.withOpacity(0.2),
+            selectedTileColor: YaruVariant.orange.color.withOpacity(0.2),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),

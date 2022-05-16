@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:knoxxbox/constants.dart';
 import 'package:knoxxbox/screens/splash.dart';
-import 'package:knoxxbox/theme.dart';
 import 'package:yaru/yaru.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: kAppName,
       theme: yaruLight,
       darkTheme: yaruDark,
       home: const SplashPage(),
