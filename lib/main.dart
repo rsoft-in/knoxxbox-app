@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:knoxxbox/screens/splash.dart';
 import 'package:knoxxbox/theme.dart';
+import 'package:yaru/yaru.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: flexTheme(),
-      darkTheme: flexThemeDark(),
+      theme: yaruLight,
+      darkTheme: yaruDark,
       home: const SplashPage(),
       debugShowCheckedModeBanner: false,
     );
