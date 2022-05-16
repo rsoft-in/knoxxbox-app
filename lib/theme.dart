@@ -1,13 +1,13 @@
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 
-const FlexScheme usedScheme = FlexScheme.redWine;
+const FlexScheme usedScheme = FlexScheme.outerSpace;
 
 ThemeData flexTheme() {
   return FlexThemeData.light(
     scheme: usedScheme,
     surfaceMode: FlexSurfaceMode.highSurfaceLowScaffold,
-    blendLevel: 10,
+    blendLevel: 20,
     appBarOpacity: 0.5,
     appBarStyle: FlexAppBarStyle.background,
     transparentStatusBar: true,
@@ -19,6 +19,8 @@ ThemeData flexTheme() {
       bottomNavigationBarOpacity: 0.5,
       useTextTheme: false,
       bottomSheetModalElevation: 0,
+      inputDecoratorRadius: 5,
+      inputDecoratorBorderType: FlexInputBorderType.underline,
     ),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
@@ -40,6 +42,8 @@ ThemeData flexThemeDark() {
       bottomNavigationBarOpacity: 0.5,
       useTextTheme: false,
       bottomSheetModalElevation: 0,
+      inputDecoratorRadius: 5,
+      inputDecoratorBorderType: FlexInputBorderType.underline,
     ),
     visualDensity: VisualDensity.adaptivePlatformDensity,
   );
